@@ -12,5 +12,12 @@ namespace Palindrome.Tests
       PalindromeClass testPalindrome = new PalindromeClass();
       Assert.AreEqual(true, testPalindrome.isPalindrome("deezeNutz"));
     }
+    [TestMethod]
+    public void palCenter_PalindromeCenter_Char()
+    {
+      PalindromeClass testPalindrome = new PalindromeClass();
+      string palInput = "civic";
+      Assert.AreEqual(true, testPalindrome.palCenter(palInput));
+    }
   }
 }
